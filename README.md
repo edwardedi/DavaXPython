@@ -1,0 +1,7 @@
+This project is a command-line interface (CLI) tool designed to perform basic mathematical operations such as calculating powers, factorials, and Fibonacci numbers. It’s built with Python and is organized in a modular way to keep the logic, data modeling, and database interactions separate and maintainable.
+
+The user interacts with the tool through a terminal by passing in commands like pow, factorial, or fibonacci, followed by the necessary input values. The tool processes these inputs using a dedicated MathService class, which handles the core mathematical logic. For example, the factorial function uses recursion, while the Fibonacci sequence is computed iteratively for better performance.
+
+One of the key features of this tool is its ability to log every request to a local SQLite database. Each request, along with its inputs, result, operation type, and timestamp, is saved automatically. This is managed by the Database class and uses a RequestModel defined with the help of Pydantic for data validation and timestamp generation.
+
+The application is ideal for lightweight usage, educational purposes, or as a foundation for more advanced tools. It also demonstrates how to structure a Python CLI program with clear separation of concerns, making it easy to extend with additional features or operations in the future.
